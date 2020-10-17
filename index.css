@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+
+body {
+  background-color: #ffffff;
+  background: url("https://unsplash.com/photos/hTv8aaPziOQ/download?force=true&w=1920"),
+    rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken;
+}
+
+#logo {
+  font-family: "Staatliches", cursive;
+
+  background: #ff5f6d; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffc371,
+    #ff5f6d
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffc371,
+    #ff5f6d
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+#small-screen {
+  display: none;
+}
+
+#drum-machine {
+  border-width: 1em;
+}
+
+@media (min-width: 1024px) {
+  #drum-machine {
+    border-width: 3em;
+  }
+}
+
+@media (max-width: 767px) {
+  #drum-machine {
+    display: none;
+  }
+  #small-screen {
+    display: block;
+  }
+}
