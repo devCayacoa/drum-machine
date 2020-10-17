@@ -43,7 +43,7 @@ body {
   }
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 600px) and (orientation: portrait) {
   #drum-machine {
     display: none;
   }
