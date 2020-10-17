@@ -222,7 +222,7 @@ const DrumMachine = ({
   return (
     <div
       id="drum-machine"
-      className="p-4 w-full mx-auto bg-gray-800 border-gray-900 grid grid-cols-12 shadow-xl rounded-md place-content-center"
+      className="p-4 lg:w-full w-4/5 mx-auto bg-gray-800 border-gray-900 grid grid-cols-12 shadow-xl rounded-md place-content-center justify-center"
     >
       <MusicButtonsWrapper
         bank={bank}
@@ -307,7 +307,9 @@ class App extends React.Component {
   render() {
     return (
       <div
-        className={"select-none grid h-screen place-content-center antialiased"}
+        className={
+          "select-none lg:grid lg:h-screen lg:place-content-center antialiased"
+        }
       >
         <DrumMachine
           bank={this.state.bank}
